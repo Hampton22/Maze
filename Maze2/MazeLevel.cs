@@ -17,6 +17,7 @@ namespace Maze2
         {
             CreateMaze();
             CreateFinish();
+            //test
         }
 
         private void CreateFinish()
