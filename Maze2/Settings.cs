@@ -29,6 +29,12 @@ namespace Maze2
                 roundButton2.BackColor = Color.SpringGreen;
                 roundButton2.BackColor2 = Color.Aquamarine;
             }
+
+            if (menu.level == 3)
+            {
+                roundButton3.BackColor = Color.SpringGreen;
+                roundButton3.BackColor2 = Color.Aquamarine;
+            }
         }
 
         private void roundButton2_Click(object sender, EventArgs e)

@@ -72,9 +72,10 @@ namespace Maze2
             CreateWall(555, 110, 3, 50);
             CreateWall(505, 160, 50, 3);
             CreateWall(505, 160, 3, 150);
-            CreateWall(505, 310, 100, 3);
-            CreateWall(605, 260, 3, 50);
-            CreateWall(605, 260, 265, 3);
+            CreateWall(505, 310, 50, 3);
+            CreateWall(610, 300, 3, 50);
+            CreateWall(610, 260, 250, 3);
+            CreateWall(505, 260, 40, 3);
 
             CreateWall(415, 110, 140, 3);
             CreateWall(415, 60, 3, 50);
@@ -122,13 +123,13 @@ namespace Maze2
             CreateWall(340, 340, 3, 60);
             CreateWall(65, 260, 3, 90);
             CreateWall(40, 350, 80, 3);
-            CreateWall(505, 350, 305, 3);
-            CreateWall(505, 310, 3, 40);
+            CreateWall(505, 350, 270, 3);
+            CreateWall(505, 310, 3, 50);
             CreateWall(810, 300, 3, 50);
-            CreateWall(810, 300, 90, 3);
+            CreateWall(810, 300, 50, 3);
             CreateWall(710, 300, 3, 50);
             CreateWall(660, 260, 3, 50);
-            CreateWall(760, 260, 3, 50);
+            CreateWall(760, 260, 3, 40);
             CreateWall(760, 390, 3, 50);
             CreateWall(660, 390, 3, 50);
             CreateWall(560, 390, 3, 50);
@@ -136,7 +137,17 @@ namespace Maze2
             CreateWall(710, 350, 3, 50);
             CreateWall(810, 350, 3, 50);
             CreateWall(810, 375, 50, 3);
-            CreateWall(860, 325, 3, 50);
+            CreateWall(860, 340, 3, 100);
+            CreateWall(760, 300, 50, 3);
+        }
+
+        public bool IsTouchFinish(Ball ball)
+        {
+            if (rectangleOfFinish.IntersectsWith(ball.boundingBox))
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool IsTouchBorders(Ball ball)

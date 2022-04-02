@@ -37,7 +37,7 @@ namespace Maze2
 
             pictureBox1.Image = bitmap;
             pictureBox1.Invalidate();
-            timer1.Start();
+            
         }
 
         private void DrawBall()
@@ -102,6 +102,7 @@ namespace Maze2
         }
         private void InitLevel()
         {
+            timer1.Start();
             if (menu.level == 1)
             {
                 label1.Text = "Уровень 1";
@@ -127,27 +128,33 @@ namespace Maze2
         {
             if (IsTouchFinish())
             {
-                MessageBox.Show("Вы выйграли");
-                DialogResult result = MessageBox.Show(
-                    "Хотите ли вы перейти на следующий уровень?","предложение века",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.No)
+                timer1.Stop();
+                menu.level++;
+                if (menu.level > 3)
                 {
-                    timer1.Stop();
+                    MessageBox.Show("Вы прошли всю игру! Поздравляем!");
                     this.Close();
                     menu.Show();
                 }
-
-                if (result == DialogResult.Yes)
+                else
                 {
-                    menu.level++;
-                    if (menu.level < 4)
+                    DialogResult result = MessageBox.Show(
+                    "Вы выйграли." +
+                    " Хотите ли вы перейти на следующий уровень?",
+                    "предложение века",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.No)
                     {
+                        this.Close();
+                        menu.Show();
+                    }
+
+                    if (result == DialogResult.Yes)
+                    { 
                         InitLevel();
                     }
-                   
                 }
-                
+
             }
         }
 
@@ -160,6 +167,11 @@ namespace Maze2
             if (menu.level == 2)
             {
                 return mazeLevel1.IsTouchFinish(ball);
+            }
+
+            if (menu.level == 3)
+            {
+                return mazeLevel2.IsTouchFinish(ball);
             }
 
             return false;
