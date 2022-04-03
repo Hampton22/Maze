@@ -48,7 +48,7 @@ namespace Maze2
         {
             CreateWall(10, 10, 890, 3);
             CreateWall(10, 440, 890, 3);
-            CreateWall(10, 60, 3, 380);
+            CreateWall(10, 10, 3, 430);
             CreateWall(900, 10, 3, 380);
 
             CreateWall(100, 10, 3, 50);

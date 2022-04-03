@@ -12,7 +12,7 @@ namespace Maze2
 {
     public partial class Menu : Form
     {
-        public int level = 3;
+        public int level = 1;
         public Menu()
         {
             InitializeComponent();
