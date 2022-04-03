@@ -221,5 +221,19 @@ namespace Maze2
             Application.Exit();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Тест");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            button1.Show();
+        }
+
+        private void label1_DoubleClick(object sender, EventArgs e)
+        {
+            button1.Hide();
+        }
     }
 }
