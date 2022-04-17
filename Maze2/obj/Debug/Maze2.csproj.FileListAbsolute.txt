@@ -47,3 +47,15 @@ C:\Users\yurik\Source\Repos\Hampton22\Maze\Maze2\obj\Debug\Maze2.csproj.Generate
 C:\Users\yurik\Source\Repos\Hampton22\Maze\Maze2\obj\Debug\Maze2.csproj.CoreCompileInputs.cache
 C:\Users\yurik\Source\Repos\Hampton22\Maze\Maze2\obj\Debug\Maze2.exe
 C:\Users\yurik\Source\Repos\Hampton22\Maze\Maze2\obj\Debug\Maze2.pdb
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\bin\Debug\Maze2.exe.config
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\bin\Debug\Maze2.exe
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\bin\Debug\Maze2.pdb
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.csproj.AssemblyReference.cache
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.Form1.resources
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.Menu.resources
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.Properties.Resources.resources
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.Settings.resources
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.csproj.GenerateResource.cache
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.csproj.CoreCompileInputs.cache
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.exe
+C:\Users\yurik\source\repos\RealMaze\Maze\Maze2\obj\Debug\Maze2.pdb

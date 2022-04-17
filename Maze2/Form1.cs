@@ -221,5 +221,31 @@ namespace Maze2
             Application.Exit();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+        }
+
+        private void label1_DoubleClick(object sender, EventArgs e)
+        {
+            button1.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (menu.level == 1)
+            {
+                ball.boundingBox = new Rectangle(1150, 120, 15, 15);
+            }
+            if (menu.level == 2)
+            {
+                ball.boundingBox = new Rectangle(30, 220, 15, 15);
+            }
+            if (menu.level == 3)
+            {
+                ball.boundingBox = new Rectangle(890, 390, 15, 15);
+            }
+            button1.Visible = false;
+        }
     }
 }
